@@ -29,26 +29,26 @@ const router = createRouter({
       name: 'contact',
       component: () => import('../views/ContactView.vue')
     },
-    {
-      path: '/register',
-      name: 'register',
-      component: () => import('../views/SignUpView.vue')
-    },
-    {
-      path: '/profile',
-      name: 'profile',
-      component: () => import('../views/ProfileView.vue')
-    },
-    {
-      path: '/settings',
-      name: 'settings',
-      component: () => import('../views/SettingsView.vue')
-    },
-    {
-      path: '/new',
-      name: 'news',
-      component: () => import('../views/NewsView.vue')
-    },
+    // {
+    //   path: '/register',
+    //   name: 'register',
+    //   component: () => import('../views/SignUpView.vue')
+    // },
+    // {
+    //   path: '/profile',
+    //   name: 'profile',
+    //   component: () => import('../views/ProfileView.vue')
+    // },
+    // {
+    //   path: '/settings',
+    //   name: 'settings',
+    //   component: () => import('../views/SettingsView.vue')
+    // },
+    // {
+    //   path: '/new',
+    //   name: 'news',
+    //   component: () => import('../views/NewsView.vue')
+    // },
     // {
     //   path: '/save',
     //   name: 'save',
