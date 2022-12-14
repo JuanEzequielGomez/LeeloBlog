@@ -43,7 +43,7 @@
         padding-top: 2rem;
     }
     img{
-        width: 25rem;
+        width: 20rem;
         border-radius: 4rem;
     }
 

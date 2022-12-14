@@ -21,8 +21,9 @@ const hideMenu = ()=>{
         </div>
         <div id="hidden" @click="hideMenu"></div>
         <!-- <h1>Posting!!!</h1> -->
-        <!-- <RouterLink to="/"><img class="logo_header" src="../assets/logo_nav.png" alt="Leelo Gluten"></RouterLink> -->
+        
       </div>
+      <RouterLink to="/"><img class="logo_header" src="../assets/logo_nav.png" alt="Leelo Gluten"></RouterLink>
       <RouterLink @click="hideMenu" to="/login">
         <div class="userPhoto">
           <img :src="user ? user.photoURL : 'https://picsum.photos/200'" alt="user photo" />
@@ -45,10 +46,11 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 5rem;
 }
 
 .hamburguesa{
-  height: 30px;
+  height: 10px;
   width: 30px;
   display: flex;
   align-items: center;
@@ -66,7 +68,7 @@ input{
   width: 300px;
   top: -22px;
   left: -322px;
-  background-color: white;
+  background-color: rgba(67, 79, 78);
   transition: all 0.5s;
   z-index: 5;
 }
@@ -112,15 +114,15 @@ label::before{
 
 #checkbox:checked ~ label::after{
   transform: rotate(225deg);
-  border-color: palevioletred;
-  background-color: palevioletred;
+  border-color: var(--color-btn);
+  background-color: var(--color-btn);
   top: -2px;
 }
 
 #checkbox:checked ~ label::before{
   transform: rotate(-225deg);
-  border-color: palevioletred;
-  background-color: palevioletred;
+  border-color: var(--color-btn);
+  background-color: var(--color-btn);
   top: -2px;
 }
 #checkbox:checked ~ label{
@@ -132,7 +134,7 @@ label::before{
 }
 
 #checkbox:checked ~ h1{
-  color: palevioletred;
+  color: var(--color-btn);
 }
 
 #checkbox:checked ~ #hidden{
@@ -157,6 +159,7 @@ h1 {
   height: 50px;
   border-radius: 50%;
   overflow: hidden;
+  margin-right: .5rem;
 }
 
 .userPhoto img {
@@ -167,5 +170,10 @@ h1 {
 
 a {
   text-decoration: none;
+}
+
+.logo_header{
+  width: 7rem;
+
 }
 </style>

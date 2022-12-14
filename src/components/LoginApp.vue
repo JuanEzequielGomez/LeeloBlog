@@ -33,8 +33,8 @@ const changeUser = computed(() => {
     </div>
     <!-- Login with google button -->
     <div>
-      <button v-if="!user" class="loginButton" @click="login">Login with Google</button>
-      <button v-if="user" class="logoutButton" @click="logout">Logout</button>
+      <RouterLink to="/posts"><button v-if="!user" class="loginButton" @click="login">Login with Google</button></RouterLink>
+      <RouterLink to="/"><button v-if="user" class="logoutButton" @click="logout">Logout</button></RouterLink>
     </div>
     <!-- Logout button -->
   </div>

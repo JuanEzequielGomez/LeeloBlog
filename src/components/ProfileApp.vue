@@ -1,5 +1,5 @@
 <script setup>
-    import user from '../store/profile.js';
+    import user from '../store/User.js';
     
 </script>
 

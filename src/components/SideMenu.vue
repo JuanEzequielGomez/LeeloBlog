@@ -28,12 +28,17 @@ const emits = defineEmits(['hideMenu'])
 }
 
 li img{
-    width: 100%;
+    width: 10rem;
     border-radius: 50%;
+    align-content: center;
+    padding-left: 3rem;
+    margin-left: 1.5rem;
 }
 
 li h1, li h2{
-    color: palevioletred;
+    color: white;
+    text-align: center;
+    padding-top: 1rem;
 }
 
 li h2{
@@ -42,7 +47,7 @@ li h2{
 }
 
 ul{
-    padding: 0;
+    padding-top: 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -60,7 +65,7 @@ li a{
     display: inline-block;
     width: 100%;
     text-align: center;
-    background-color: palevioletred;
+    background-color: var(--color-btn);
     padding: 0.5rem;
     text-decoration: none;
     font-weight: bold;
@@ -70,24 +75,27 @@ li a{
 }
 
 li a:hover{
-    background-color: pink;
+    background-color: #DA9724;
     transform: scale(1.05);
+    color: black;
 }
 
 .active{
-    animation: brillar 2s infinite ease-in-out;
+    /* animation: brillar 2s infinite ease-in-out; */
+    color: black;
+    transform: scale(1.05);
 }
 
-@keyframes brillar{
+/* @keyframes brillar{
     0%{
-        background-color: pink;
+        background-color: rgb(85, 117, 113);
     }
     50%{
-        background-color: palevioletred;
+        background-color: rgb(85, 117, 113, 0.8);
         transform: scale(1.05);
     }
     100%{
-        background-color: pink;
+        background-color: rgb(85, 117, 113);
     }
-}
+} */
 </style>
