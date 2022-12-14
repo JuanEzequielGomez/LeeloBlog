@@ -20,7 +20,7 @@ const updateMyPosts = computed(()=>{
 <template>
     <main>
         {{updateMyPosts}}
-        <h1 v-if="!user">Debe iniciar sesion para ver sus posts!</h1>
+        <h1 v-if="!user">You must log in to see your posts!</h1>
         <div class="cardContainer">
             <PostItem v-for="post in myPosts" :post="post" :key="post.id" />
         </div>

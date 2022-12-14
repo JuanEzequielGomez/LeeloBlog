@@ -16,21 +16,21 @@ const props = defineProps({
 const updateComments = computed(() => {
     commentsWithId.value = comments.value.filter(comment => comment.postId === props.postId)
     if (commentsWithId.value.length == 1) {
-        textoP.value = `Ver comentario`
+        textoP.value = `See coment`
     } else {
-        textoP.value = `Ver los ${commentsWithId.value.length} comentarios`
+        textoP.value = `See the ${commentsWithId.value.length} coments`
     }
 })
 
 const verMasMenos = () => {
     verMas.value = !verMas.value
     if (verMas.value) {
-        textoP.value = `Ocultar`
+        textoP.value = `Hide`
     } else {
         if (commentsWithId.value.length == 1) {
-            textoP.value = `Ver comentario`
+            textoP.value = `See comment`
         } else {
-            textoP.value = `Ver los ${commentsWithId.value.length} comentarios`
+            textoP.value = `See the ${commentsWithId.value.length} coments`
         }
     }
 }

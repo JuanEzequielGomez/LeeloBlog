@@ -37,10 +37,10 @@ const addNewPost = () => {
     <form>
         <div class="header">
             <img :src="user.photoURL" alt="foto de perfil">
-            <textarea maxlength="280" required v-model="message" placeholder="¿Quieres postear algo?"
+            <textarea maxlength="280" required v-model="message" placeholder="Do you want to post something?"
                 @keyup.enter="addNewPost"></textarea>
         </div>
-        <button @click.prevent="addNewPost">Postear</button>
+        <button @click.prevent="addNewPost">Post</button>
     </form>
 </template>
 

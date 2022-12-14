@@ -23,7 +23,7 @@ const changeUser = computed(() => {
 <template>
   <div class="login">
     {{ changeUser }}
-    <h1 v-if="!user">No se ha logueado aun!</h1>
+    <h1 v-if="!user">You haven't logged in yet!</h1>
     <div class="formsContainer">
 
       <!-- user card from firebase -->
