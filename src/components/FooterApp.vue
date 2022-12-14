@@ -40,7 +40,7 @@
 
 .material-symbols-outlined:hover {
     font-size: 40px !important;
-    color: var(--color-btn);
+    color: var(--color-text-dark);
 }
 
 footer{
@@ -102,16 +102,32 @@ nav .nav a span{
     border-radius: 50%;
 }
 .navbar-menu a:hover{
-    border-bottom: var(--color-btn) solid 1px;
+    border-bottom: var(--color-text-dark) solid 1px;
     transform: scaleY(1.5px);
 }
 
 .active{
-    color: var(--color-btn) !important;
-    background-color: var(--color-text-ligth);
-    padding: .5rem 1rem;
-    border-radius: .3rem;
+    color: var(--color-text-dark) !important;
+    /* background-color: var(--color-text-ligth); */
+    padding: .5rem 0.9rem .5rem 0.6rem;
+    border-radius: 1.5rem;
+    animation: brillar 2s infinite ease-in-out;
+    /* transform: scale(1.05); */
 }
+
+@keyframes brillar{
+    0%{
+        background-color: var(--color-btn);
+    }
+    50%{
+        background-color: var(--color-btn);
+        transform: scale(1.05);
+    }
+    100%{
+        background-color: var(--color-btn);
+    }
+}
+
 .offcanvas{
     background-color: var(--color-primary);
     border-radius: 0rem 0rem 0rem 1rem;

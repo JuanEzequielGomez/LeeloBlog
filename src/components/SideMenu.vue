@@ -10,8 +10,11 @@ const emits = defineEmits(['hideMenu'])
             <li v-if="user"><img :src="user.photoURL" alt=""></li>
             <li v-if="user"><h1>{{user.displayName}}</h1></li>
             <li v-if="user"><h2>{{user.email}}</h2></li>
+            <li v-if="user"><RouterLink @click="emits('hideMenu')" active-class="active" to="/login">Profile</RouterLink></li>
+            <li v-if="user"><RouterLink @click="emits('hideMenu')" active-class="active" to="/myposts">My posts</RouterLink></li>
+            <li v-if="user"><RouterLink @click="emits('hideMenu')" active-class="active" to="/favorites">Favorites</RouterLink></li>
             <li><RouterLink @click="emits('hideMenu')" active-class="active" to="/posts">Posts</RouterLink></li>
-            <li><RouterLink @click="emits('hideMenu')" active-class="active" to="/myposts">Mis post</RouterLink></li>
+            <li><RouterLink @click="emits('hideMenu')" active-class="active" to="/news">News</RouterLink></li>
             <!-- <li><RouterLink @click="emits('hideMenu')" active-class="active" to="/valoraciones">Valoraciones</RouterLink></li> -->
             <li><RouterLink @click="emits('hideMenu')" active-class="active" to="/login">Login</RouterLink></li>
         </ul>
