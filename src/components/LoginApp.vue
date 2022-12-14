@@ -18,6 +18,8 @@ const changeUser = computed(() => {
 
 </script>
 
+
+
 <template>
   <div class="login">
     {{ changeUser }}
@@ -58,23 +60,33 @@ const changeUser = computed(() => {
 
 /* Google login button */
 .loginButton {
-  background-color: #4285f4;
+  background-color:var(--color-primary);
   color: white;
   padding: 10px 20px;
   border: none;
-  border-radius: 5px;
+  border-radius: 5rem;
   cursor: pointer;
   font-size: 16px;
 }
 
+.loginButton:hover {
+  background-color:var(--color-btn);
+  color: white;
+}
+
 .logoutButton{
-  background-color: red;
+  background-color: var(--color-btn);
   color: white;
   padding: 10px 20px;
   border: none;
-  border-radius: 5px;
+  border-radius: 5rem;
   cursor: pointer;
   font-size: 16px;
+}
+
+.logoutButton:hover {
+  background-color: red;
+  color: white;
 }
 
 .userCard{

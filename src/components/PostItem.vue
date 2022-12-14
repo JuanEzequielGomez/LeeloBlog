@@ -77,6 +77,12 @@ button {
     cursor: pointer;
 }
 
+h3{
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
 .favorite{
     cursor: pointer;
     transition: all 1s;
@@ -105,6 +111,7 @@ button {
     width: 500px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     transition: 0.5s all;
+    border: 0.2rem solid var(--color-primary);
 }
 
 .cardHeader {
@@ -115,6 +122,7 @@ button {
     gap: 1rem;
     border-bottom: 2px solid palevioletred;
     border-radius: 50px 0 0 50px;
+    
 }
 
 h3 {
@@ -129,9 +137,10 @@ h3 {
 
 .cardContent {
     display: flex;
-    box-shadow: 2px 2px pink;
-    border-radius: 10px;
-    margin: 5px 0;
+    box-shadow: 2px 2px var(--color-primary);
+    border-radius: 5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
     flex-direction: column;
     background-color: white;
     padding: 1rem;
@@ -151,15 +160,15 @@ h3 {
 }
 
 .muted {
-    color: gray;
-    font-size: 0.7rem;
-    text-align: end;
+    color: black;
+    font-size: 0.6rem;
+    text-align: start;
     width: 100%;
     position: absolute;
     bottom: 0;
     right: 0;
-    margin-right: 0.6rem;
-    opacity: 0.5;
+    left: 1rem;
+    /* opacity: 0.5; */
 }
 
 @media screen and (max-width: 600px) {

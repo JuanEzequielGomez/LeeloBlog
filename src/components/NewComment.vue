@@ -30,7 +30,7 @@ const addNewComment = () => {
 
 <template>
     <form @submit.prevent="addNewComment">
-        <input maxlength="80" required v-model="texto" type="text" :placeholder="'comentar como '+user.displayName.split(' ')[0]">
+        <input maxlength="80" required v-model="texto" type="text" :placeholder="'Comentar este post como '+user.displayName.split(' ')[0]">
         <button>Enviar</button>
     </form>
 </template>
@@ -50,7 +50,7 @@ const addNewComment = () => {
     }
 
     form button{
-        background-color: pink;
+        background-color: var(--color-primary);
         color: white;
         border: none;
         margin-left: 5px;
@@ -60,7 +60,7 @@ const addNewComment = () => {
     }
 
     form button:hover{
-        background-color: palevioletred;
+        background-color: var(--color-btn);
     }
 
 </style>

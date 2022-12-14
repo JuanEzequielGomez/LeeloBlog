@@ -37,7 +37,7 @@ const addNewPost = () => {
     <form>
         <div class="header">
             <img :src="user.photoURL" alt="foto de perfil">
-            <textarea maxlength="280" required v-model="message" placeholder="¿Que estas pensando?"
+            <textarea maxlength="280" required v-model="message" placeholder="¿Quieres postear algo?"
                 @keyup.enter="addNewPost"></textarea>
         </div>
         <button @click.prevent="addNewPost">Postear</button>
@@ -52,14 +52,15 @@ form {
     background-color: white;
     margin: 10px auto;
     gap: 0.5rem;
-    padding: 0.5rem;
+    padding: 1rem;
     border-radius: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.103);
+    /* border: 1px solid rgba(0, 0, 0, 0.103); */
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.166);
+    border: 0.2rem solid var(--color-primary);
 }
 
 form img {
-    width: 50px;
+    width: 4rem;
     border-radius: 50%;
 }
 
@@ -81,6 +82,7 @@ textarea {
     resize: none;
     border: none;
     flex-grow: 1;
+    /* border: 1rem solid var(--color-primary); */
 }
 
 button {
@@ -92,12 +94,12 @@ button {
     width: 5rem;
     align-self: flex-end;
     color: white;
-    background-color: pink;
+    background-color: var(--color-primary);
     transition: 0.5s all;
 }
 
 button:hover {
-    background-color: palevioletred;
+    background-color: var(--color-btn);
 }
 
 @media screen and (max-width: 600px){

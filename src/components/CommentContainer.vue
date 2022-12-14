@@ -58,7 +58,8 @@ const verMasMenos = () => {
 }
 
 .verMas {
-    color: blueviolet;
+    color: var(--color-btn);
     cursor: pointer;
+    font-weight: 600;
 }
 </style>

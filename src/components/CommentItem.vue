@@ -23,7 +23,8 @@ const props = defineProps({
 
 .card {
     position: relative;
-    width: 90%;
+    width: 100%;
+    border: none;
 }
 
 .cardHeader{
@@ -32,15 +33,17 @@ const props = defineProps({
     justify-content: space-between;
     align-items: flex-end;
     align-items: center;
-    height: 1.5rem;
+    height: 3rem;
     padding: 0.5rem;
-    background-color: rgba(255, 192, 203, 0.346);
+    background-color: var(--color-btn);
     border-radius: 5px 10px 10px 0;
 }
 
 h3{
     font-weight: bold;
-    font-size: 0.8rem;
+    font-size: 1rem;
+    padding-top: 0.5rem;
+    padding-left: 1rem;
 }
 
 .cardHeader img{
